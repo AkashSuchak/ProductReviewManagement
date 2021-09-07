@@ -29,11 +29,14 @@ namespace ProductReviewManagement
                 new ProductReview(){ProductId=15,UserId=10,Rating=4,Review="Nice",isLike=true },
                 new ProductReview(){ProductId=16,UserId=10,Rating=4,Review="Nice",isLike=true }
             };
-            foreach (var list in productReviewList)
+            /*foreach (var list in productReviewList)
             {
                 Console.WriteLine("ProductId:- " + list.ProductId + " " + "UserId:- " + list.UserId
                     + " " + "Rating:- " + list.Rating + " " + "Review:- " + list.Review + " " + "isLike :- " + list.isLike);
             }
+*/
+            Management management = new Management();
+            management.TopRecords(productReviewList);
 
         }
     }
